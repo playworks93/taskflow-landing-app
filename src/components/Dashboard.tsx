@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'user_authentication_&_onboarding' ? 'active' : ''}
-          onClick={() => setActiveTab('user_authentication_&_onboarding')}
+          className={activeTab === 'task_creation_and_management' ? 'active' : ''}
+          onClick={() => setActiveTab('task_creation_and_management')}
         >
-          User Authentication & Onboarding
-        </button>
-        <button 
-          className={activeTab === 'task_creation_&_management' ? 'active' : ''}
-          onClick={() => setActiveTab('task_creation_&_management')}
-        >
-          Task Creation & Management
+          Task Creation And Management
         </button>
         <button 
           className={activeTab === 'collaborative_task_sharing' ? 'active' : ''}
           onClick={() => setActiveTab('collaborative_task_sharing')}
         >
           Collaborative Task Sharing
+        </button>
+        <button 
+          className={activeTab === 'real_time_notifications' ? 'active' : ''}
+          onClick={() => setActiveTab('real_time_notifications')}
+        >
+          Real Time Notifications
         </button>
       </nav>
 
@@ -55,17 +55,10 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'user_authentication_&_onboarding' && (
+        {activeTab === 'task_creation_and_management' && (
           <div className="tab-content">
-            <h2>User Authentication & Onboarding</h2>
-            <p>Manage your user authentication & onboarding here.</p>
-          </div>
-        )}
-
-        {activeTab === 'task_creation_&_management' && (
-          <div className="tab-content">
-            <h2>Task Creation & Management</h2>
-            <p>Manage your task creation & management here.</p>
+            <h2>Task Creation and Management</h2>
+            <p>Manage your task creation and management here.</p>
           </div>
         )}
 
@@ -73,6 +66,13 @@ const Dashboard = (props: DashboardProps) => {
           <div className="tab-content">
             <h2>Collaborative Task Sharing</h2>
             <p>Manage your collaborative task sharing here.</p>
+          </div>
+        )}
+
+        {activeTab === 'real_time_notifications' && (
+          <div className="tab-content">
+            <h2>Real-time Notifications</h2>
+            <p>Manage your real time notifications here.</p>
           </div>
         )}
       </div>
