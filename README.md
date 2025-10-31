@@ -4,12 +4,12 @@ TaskFlow - Built with React + TypeScript + Vite
 
 ## Features
 
-- User Authentication & Onboarding
-- Task Creation & Management
+- Task Creation and Management
 - Collaborative Task Sharing
-- Progress Tracking & Analytics
-- Team Collaboration Tools
-- Notifications & Reminders
+- Real-time Notifications
+- Progress Tracking and Analytics
+- Customizable Task Labels and Categories
+- Integrations with Calendar and Other Tools
 
 ## Tech Stack
 
